@@ -1,0 +1,42 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% include 'header.html' %}
+    </head>
+    <body>
+    <div id="loginform">
+    <div class="content">
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <p><strong>用户名，密码有误！</strong></p>
+            </div>
+        {% endif %}
+        <form action="{% url 'django.contrib.auth.views.login' %}" method="post" class="form-horizontal" role="form">{% csrf_token %}
+            <legend><span class="col-sm-offset-1">登录</span></legend>
+            {% for field in form %}
+                {% include 'registration/form_field.html' %}
+            {% endfor %}
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">登录</button>
+                  &nbsp;<button type="reset" class="btn">取消</button>
+                </div>
+            </div>
+        </form>
+        <p><a href="{% url 'django.contrib.auth.views.password_reset' %}">重置密码</a></p>
+        <script type="text/javascript">
+            $(function(){
+                $(".alert-message").alert();
+                $('#mainForm').submit(function(){
+                    $('#submit').button('loading');
+                })
+            });
+            document.forms[1].elements[2].focus();
+        </script>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+    </body>
+</html>
+

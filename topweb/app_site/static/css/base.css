@@ -1,0 +1,103 @@
+body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+#loginform {
+    margin: auto;
+    width: 500px;
+}
+
+#footer {
+    margin: auto;
+    width: 235px;
+}
+
+#resetform {
+    margin: auto;
+    width: 600px;
+}
+
+#resetdone {
+    margin: auto;
+    width: 410px;
+}
+
+#resetpasswd {
+    margin: auto;
+    width: 800px;
+}
+
+
+/*扫描任务*/
+.content .margin_ten {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.main_panel {
+    min-height: 400px;
+}
+.tab_margin {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.ellipsis {
+    text-overflow:ellipsis;white-space:nowrap;overflow: hidden;
+}
+
+.break_word {
+    word-wrap:break-word;
+}
+
+.wait {
+    background:url('/static/img/wait.png') 0 0 no-repeat;
+}
+
+.task_record .running {
+    background:url('/static/img/running.gif');
+}
+.stop {
+    background:url('/static/img/stop.png') 0 0 no-repeat;
+}
+.complete {
+    background:url('/static/img/complete.png') 0 0 no-repeat;
+}
+
+#dir_tree .folder { background:url('/static/img/file_sprite.png') right bottom no-repeat; }
+#dir_tree .file { background:url('/static/img/file_sprite.png') 0 0 no-repeat; }
+#dir_tree .file-pdf { background-position: -32px 0 }
+#dir_tree .file-as { background-position: -36px 0 }
+#dir_tree .file-c { background-position: -72px -0px }
+#dir_tree .file-iso { background-position: -108px -0px }
+#dir_tree .file-htm, #dir_tree .file-html, #dir_tree .file-xml, #dir_tree .file-xsl { background-position: -126px -0px }
+#dir_tree .file-cf { background-position: -162px -0px }
+#dir_tree .file-cpp { background-position: -216px -0px }
+#dir_tree .file-cs { background-position: -236px -0px }
+#dir_tree .file-sql { background-position: -272px -0px }
+#dir_tree .file-xls, #dir_tree .file-xlsx { background-position: -362px -0px }
+#dir_tree .file-h { background-position: -488px -0px }
+#dir_tree .file-crt, #dir_tree .file-pem, #dir_tree .file-cer { background-position: -452px -18px }
+#dir_tree .file-php { background-position: -108px -18px }
+#dir_tree .file-jpg, #dir_tree .file-jpeg, #dir_tree .file-png, #dir_tree .file-gif, #dir_tree .file-bmp { background-position: -126px -18px }
+#dir_tree .file-ppt, #dir_tree .file-pptx { background-position: -144px -18px }
+#dir_tree .file-rb { background-position: -180px -18px }
+#dir_tree .file-text, #dir_tree .file-txt, #dir_tree .file-md, #dir_tree .file-log, #dir_tree .file-htaccess { background-position: -254px -18px }
+#dir_tree .file-doc, #dir_tree .file-docx { background-position: -362px -18px }
+#dir_tree .file-zip, #dir_tree .file-gz, #dir_tree .file-tar, #dir_tree .file-rar { background-position: -416px -18px }
+#dir_tree .file-js { background-position: -434px -18px }
+#dir_tree .file-css { background-position: -144px -0px }
+#dir_tree .file-fla { background-position: -398px -0px }
+
+/* detail */
+#vul_detail_tree .domain { background:url('/static/img/domain.png') 0 0 no-repeat; }
+#vul_detail_tree .high { background:url('/static/img/H.png') 0 0 no-repeat; }
+#vul_detail_tree .middle { background:url('/static/img/M.png') 0 0 no-repeat; }
+#vul_detail_tree .low { background:url('/static/img/L.png') 0 0 no-repeat; }
+
+#vul_detail  .detail_text { font-size: 13px;}
+
+.tab-content .row {
+    margin-top:10px;
+}

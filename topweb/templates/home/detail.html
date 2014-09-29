@@ -1,0 +1,101 @@
+    <div class="container">
+      <div class="panel panel-default main_panel">
+        <div class="panel-heading">
+            <h1 class="panel-title "><span class="glyphicon glyphicon-th"></span>&nbsp;&nbsp;扫描详细信息</h1>
+        </div>
+        <div class="row margin_ten">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-sm" id="refresh_tab">
+                    <span class="glyphicon glyphicon-refresh"></span>&nbsp;&nbsp;刷新</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+                    <li><a href="#dirstructure" data-toggle="tab">目录结构</a></li>
+                    <li><a href="#leakdetail" data-toggle="tab">漏洞详情</a></li>
+                   <!-- <li><a href="#leakcount" data-toggle="tab">漏洞统计</a></li> -->
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active tab_margin" id="home">
+                        <div class="row">
+                            <div class="col-md-1">扫描进度:</div>
+                            <div class="col-md-6">
+                                <div class="progress progress-striped active">
+                                    <div id="current_progress_bar" class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                    <span class="" id="current_progress">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">正在扫描:</div>
+                            <div class="col-md-6" id="current_rule">sql注入</div>
+                        </div>
+                        
+                    </div> <!-- end tab home-->
+                    <div class="tab-pane tab_margin" id="dirstructure">
+                        <div id="dir_tree">
+                        </div>
+                    </div> <!-- end tab dirstructure -->
+                    <div class="tab-pane tab_margin" id="leakdetail">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="vul_detail_tree" class="ellipsis">
+                                </div> 
+                            </div>
+                            <div class="hide" id="vul_desc">
+                                <div class="col-md-6">
+                                    <div class="break_word">
+                                    <div class="row">
+                                        <div class="col-md-2">漏洞名称:</div>
+                                        <div class="col-md-10 detail_text" id="detail_name"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">描述信息:</div>
+                                        <div class="col-md-10 detail_text" id="detail_desc"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">解决方案:</div>
+                                        <div class="col-md-10 detail_text" id="detail_solution"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end vul_desc -->
+                            <div class="hide" id="vul_detail">
+                            <div class="col-md-6">
+                                <div class="break_word">
+                                <div class="row">
+                                    <div class="col-md-2">链接:</div>
+                                    <div class="col-md-10 detail_text"><a href="" target="_blank" id="detail_link"></a></div>
+                                </div>
+                                <div class="row" id="detail_detail_div">
+                                    <div class="col-md-2">详细:</div>
+                                    <div class="col-md-10 detail_text" id="detail_detail"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">请求:</div>
+                                    <div class="col-md-10 detail_text" id="detail_request"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">响应:</div>
+                                    <div class="col-md-10 detail_text" id="detail_response"></div>
+                                </div>
+                                </div>
+                            </div>
+                            </div> <!-- end vul_detail -->
+                        </div>
+                    </div> <!-- end tab leakdetail -->
+                    <!--
+                    <div class="tab-pane tab_margin" id="leakcount">
+                        444
+                    </div> -->
+                    <!-- end tab leakcount -->
+                </div>
+
+            </div> <!-- end col-md-10-->
+        </div> <!-- end row-->
+      </div> <!-- end panel-->
+    </div> <!-- end container-->

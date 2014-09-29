@@ -1,0 +1,65 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% include 'header.html' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/jstree/themes/default/style.min.css"/>
+    <script src="{{ STATIC_URL }}js/jstree/jstree.min.js"></script>
+    </head>
+    <body>
+    {% include 'nav.html' %}
+    <div class="content" id="main_body">
+      <div class="container">
+
+      <ul class="nav nav-tabs" role="tablist" id="scan_nav">
+        <li class="active"><a href="#scan_task" data-toggle="tab">
+            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;扫描任务管理</h1></a></li>
+
+      </ul>
+      <div id="scan_home">
+        <div class="tab-pane active" id="scan_task">
+        <!-- 扫描任务 start -->
+        <div class="panel panel-default main_panel">
+        <div class="row margin_ten">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-sm" id="new_task">
+                    <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;新建</button>
+                <!-- <button type="button" class="btn btn-primary btn-sm">
+                    <span class="glyphicon glyphicon-open"></span>&nbsp;&nbsp;开启</button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;停止</button> -->
+                <button type="button" class="btn btn-primary btn-sm" id="delete_task">
+                    <span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;删除</button>
+            </div>
+            {% include 'home/task.html' %}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <td>选择</td>
+                        <td>序号</td>
+                        <td>任务名</td>
+                        <td>状态</td>
+                        <td>起始时间</td>
+                        <td>结束时间</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% include 'home/task_template.html' %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </div> <!--end 扫描任务-->
+        </div> <!--end tab 1-->
+
+      </div> <!--end tab-content -->
+
+        </div> <!-- end container-->
+    </div>
+    {% include 'footer.html' %}
+    </body>
+</html>
