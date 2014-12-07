@@ -14,7 +14,7 @@ leakScan
 
 扫描基本信息:
 
-![image](https://github.com/Skycrab/leakScan/blob/master/screenshot/datail.png)
+![image](https://github.com/Skycrab/leakScan/blob/master/screenshot/detail.png)
 
 
 目录结构:
