@@ -4,7 +4,7 @@ leakScan
 在线漏洞扫描
 
 任务列表:
-![image](https://github.com/Skycrab/leakScan/tree/master/screenshot/task.png)
+![image](https://github.com/Skycrab/leakScan/blob/master/screenshot/task.png)
 
 扫描任务创建:
 ![image](https://github.com/Skycrab/leakScan/tree/master/screenshot/create.jpg)
